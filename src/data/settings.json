@@ -4,8 +4,6 @@
   "sitePath": "/",
   "siteLocale": "ja_JP",
   "description": "description",
-  "ogImageWidth": "1200",
-  "ogImageHeight": "600",
   "twitterCard": "summary_large_image",
   "themeLightColor": "#fff",
   "themeDarkColor": "#000",
