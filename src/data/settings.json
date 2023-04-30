@@ -1,0 +1,13 @@
+{
+  "siteName": "Static-Site-Boilerplate-Astro",
+  "siteDomain": "https://~/",
+  "sitePath": "/",
+  "siteLocale": "ja_JP",
+  "description": "description",
+  "ogImageWidth": "1200",
+  "ogImageHeight": "600",
+  "twitterCard": "summary_large_image",
+  "themeLightColor": "#fff",
+  "themeDarkColor": "#000",
+  "googleFonts": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap"
+}

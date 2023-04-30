@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro'
+---
+
+<Base pageName="top" title="" type="website" url="">
+  <main id="main" class="main">
+    <div class="container">
+      <h1>Static-Site-Boilerplate-Astro</h1>
+      <p>Hello World.</p>
+    </div>
+  </main>
+</Base>
+
+<script></script>
+
+<style lang="scss">
+  @use '../styles/mixins/index.scss' as *;
+
+  .main {
+    max-width: 1100px;
+    padding-top: 100px;
+    margin: 0 auto;
+
+    @include mq {
+      max-width: 1000px;
+    }
+  }
+</style>

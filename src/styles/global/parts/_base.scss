@@ -1,0 +1,28 @@
+@use '../../constants/index' as *;
+@use '../../functions/index' as *;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $fontFamily;
+  color: color(black);
+  background: color(white);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: color(main);
+  text-decoration: none;
+  cursor: none;
+}

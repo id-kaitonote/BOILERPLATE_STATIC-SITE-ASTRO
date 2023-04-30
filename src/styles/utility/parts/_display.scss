@@ -1,0 +1,29 @@
+@use '../../mixins/index' as *;
+
+.pc-only {
+  display: block !important;
+
+  @include mq(md) {
+    display: none !important;
+  }
+}
+
+.tb-only {
+  display: none !important;
+
+  @include mq(xmd, up) {
+    display: block !important;
+  }
+
+  @include mq(md) {
+    display: none !important;
+  }
+}
+
+.sp-only {
+  display: none !important;
+
+  @include mq(md) {
+    display: block !important;
+  }
+}

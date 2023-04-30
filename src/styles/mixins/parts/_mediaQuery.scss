@@ -1,0 +1,14 @@
+@use '../../constants/index' as *;
+@use 'sass:map';
+
+@mixin mq($breakpoint: md, $type: down) {
+  @if $type == down {
+    @media (max-width: #{map-get($breakPoints, $type, $breakpoint)}px) {
+      @content;
+    }
+  } @else if $type == up {
+    @media (min-width: #{map-get($breakPoints, $type, $breakpoint)}px) {
+      @content;
+    }
+  }
+}

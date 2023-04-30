@@ -1,0 +1,48 @@
+---
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import Settings from '../data/settings.json'
+import '../styles/global/index.scss'
+
+export interface Props {
+  pageName?: string
+  title?: string
+  description?: string
+  type?: string
+  url?: string
+}
+
+const { pageName, title, type, url } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{`${!title ? Settings.siteName : title + '|' + Settings.siteName}`}</title>
+    <meta name="description" content={Settings.description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href={`${Settings.siteDomain}favicon.svg`} />
+    <link rel="apple-touch-icon" href={`${Settings.siteDomain}apple-touch-icon.png`} />
+    <meta name="twitter:card" content={Settings.twitterCard} />
+    <meta property="og:image" content={`${Settings.siteDomain}ogp.png`} />
+    <meta property="og:title" content={`${!title ? Settings.siteName : title + '|' + Settings.siteName}`} />
+    <meta property="og:site_name" content={Settings.siteName} />
+    <meta property="og:description" content={Settings.description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={`${Settings.siteDomain}${url}`} />
+    <meta property="og:locale" content={Settings.siteLocale} />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content={Settings.themeLightColor} />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content={Settings.themeDarkColor} />
+    <link rel="canonical" href={`${!url ? Settings.siteDomain + url : Settings.siteDomain}`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={Settings.googleFonts} media="print" onload=" this.media='all'" />
+  </head>
+  <body id={pageName}>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
