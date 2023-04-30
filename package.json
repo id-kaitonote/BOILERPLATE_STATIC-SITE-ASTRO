@@ -90,6 +90,6 @@
     ]
   },
   "eslintIgnore": [
-    "/.eslintrc.cjs"
+    "/.eslintrc.config.cjs"
   ]
 }
