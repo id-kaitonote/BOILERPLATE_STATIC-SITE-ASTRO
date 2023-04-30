@@ -22,7 +22,7 @@ module bundler.
 ![html5](https://img.shields.io/badge/-HTML5-222.svg?logo=HTML5&style=flat-square)
 ![css3](https://img.shields.io/badge/-CSS3-222.svg?logo=CSS3&style=flat-square)
 ![Dart Sass](https://img.shields.io/badge/-Dart%20Sass-222.svg?logo=sass&style=flat-square)
-![PostCSS](https://img.shields.io/badge/-PostCSS-000000.svg?logo=PostCSS&style=flat-square)
+![PostCSS](https://img.shields.io/badge/-PostCSS-222.svg?logo=PostCSS&style=flat-square)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-222.svg?logo=JavaScript&style=flat-square)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-222.svg?logo=typescript&style=flat-square)
 ![ESLint](https://img.shields.io/badge/-ESLint-222.svg?logo=eslint&style=flat-square)
