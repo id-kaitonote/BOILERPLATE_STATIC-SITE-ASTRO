@@ -24,7 +24,6 @@ export default defineConfig({
         },
       },
       cssCodeSplit: false,
-      minify: false,
     },
   },
   integrations: [
