@@ -1,134 +1,54 @@
-# Static-Site-Boilerplate-Astro
+# Astro Starter Kit: Basics
 
-## Contents
-
-- [Static-Site-Boilerplate-Astro](#Static-Site-Boilerplate-Astro)
-  - [Overview](#Overview)
-  - [Features](#Features)
-  - [Requirement](#Requirement)
-  - [QuickStart](#QuickStart)
-  - [Build](#Build)
-  - [OtherScripts](#OtherScripts)
-  - [Directory](#Directory)
-  - [Licence](#Licence)
-
-
-## Overview
-
-Boilerplate for building static websites with Vite in the 
-module bundler.
-
-![Astro](https://img.shields.io/badge/-Astro-222.svg?logo=Astro&style=flat-square)
-![html5](https://img.shields.io/badge/-HTML5-222.svg?logo=HTML5&style=flat-square)
-![css3](https://img.shields.io/badge/-CSS3-222.svg?logo=CSS3&style=flat-square)
-![Dart Sass](https://img.shields.io/badge/-Dart%20Sass-222.svg?logo=sass&style=flat-square)
-![PostCSS](https://img.shields.io/badge/-PostCSS-222.svg?logo=PostCSS&style=flat-square)
-![JavaScript](https://img.shields.io/badge/-JavaScript-222.svg?logo=JavaScript&style=flat-square)
-![TypeScript](https://img.shields.io/badge/-TypeScript-222.svg?logo=typescript&style=flat-square)
-![ESLint](https://img.shields.io/badge/-ESLint-222.svg?logo=eslint&style=flat-square)
-![Stylelint](https://img.shields.io/badge/-Stylelint-222.svg?logo=stylelint&style=flat-square)
-![Markuplint](https://img.shields.io/badge/-Markuplint-222.svg?logo=markuplint&style=flat-square)
-![Prettier](https://img.shields.io/badge/-Prettier-222.svg?logo=prettier&style=flat-square)
-
-
-## Features
-Astro + JavaScript & TypeScript + Dart Sass + Post CSS + ESLint + Stylelint + markuplint + Prettier + husky + lint-staged
-
-## Requirement
-``` bash
-# OS
-Microsoft Windows
-
-# node
-v16.14.0
-
+```sh
+npm create astro@latest -- --template basics
 ```
 
-## Start
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-``` bash
-# Install
-npm install
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-# Development
-npm run dev
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-## Build
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-``` bash
-# Build
-npm run build
-```
+Any static assets, like images, can be placed in the `public/` directory.
 
+## 🧞 Commands
 
-## OtherScripts
+All commands are run from the root of the project, from a terminal:
 
-``` bash
-# Lint:markup
-npm run lint:markup
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-# Lint:style
-npm run lint:style
+## 👀 Want to learn more?
 
-# Lint:script
-npm run lint:script
-
-# Lint:format
-npm run lint:format
-
-# Lint:all
-npm run lint:all
-
-# Fix:markup
-npm run fix:markup
-
-# Fix:style
-npm run fix:style
-
-# Fix:script
-npm run fix:script
-
-# Fix:format
-npm run fix:format
-
-# Fix:all
-npm run fix:all
-
-# husky install
-npm run prepare
-```
-
-## Directory
-
-```bash
-├── .husky
-├── .vscode
-├─┬ app
-│ └── public
-│ └── src
-│   └── components
-│   └── data
-│   └── layouts
-│   └── pages
-│   └── scripts
-│   └── styles
-├── .editorconfig
-├── .eslintrc.cjs
-├── .gitignore
-├── .prettierignore
-├── .prettierrc
-├── .stylelintignore
-├── .stylelintrc.config.cjs
-├── postcss.config.cjs
-├── package-lock.json
-├── package.json
-├── README.md
-├── tsconfig.json
-└── astro.config.ts
-```
-
-## Licence
-
-MIT
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

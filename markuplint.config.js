@@ -1,8 +1,8 @@
-{
-  "extends": [
+export default {
+  extends: [
     "markuplint:recommended"
   ],
-  "parser": {
+  parser: {
     ".astro$": "@markuplint/astro-parser"
   }
 }
